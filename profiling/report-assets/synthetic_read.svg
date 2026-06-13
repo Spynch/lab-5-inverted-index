@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360">
+
+<style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 20px; font-weight: 700; }
+    .axis { stroke: #293241; stroke-width: 1.2; }
+    .grid { stroke: #d7dee8; stroke-width: 1; }
+    .label { font-size: 12px; }
+    .value { font-size: 12px; font-weight: 600; }
+    .caption { font-size: 12px; fill: #536173; }
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="32" text-anchor="middle" class="title">Чтение posting lists</text>
+<line x1="240.0" y1="70" x2="240.0" y2="305" class="grid"/>
+<text x="240.0" y="327" text-anchor="middle" class="caption">0.000</text>
+<line x1="374.0" y1="70" x2="374.0" y2="305" class="grid"/>
+<text x="374.0" y="327" text-anchor="middle" class="caption">360.0</text>
+<line x1="508.0" y1="70" x2="508.0" y2="305" class="grid"/>
+<text x="508.0" y="327" text-anchor="middle" class="caption">720.0</text>
+<line x1="642.0" y1="70" x2="642.0" y2="305" class="grid"/>
+<text x="642.0" y="327" text-anchor="middle" class="caption">1080</text>
+<line x1="776.0" y1="70" x2="776.0" y2="305" class="grid"/>
+<text x="776.0" y="327" text-anchor="middle" class="caption">1440</text>
+<line x1="910.0" y1="70" x2="910.0" y2="305" class="grid"/>
+<text x="910.0" y="327" text-anchor="middle" class="caption">1800</text>
+<line x1="240" y1="70" x2="240" y2="305" class="axis"/>
+<line x1="240" y1="305" x2="910" y2="305" class="axis"/>
+<text x="228" y="98.5" text-anchor="end" class="label">inMemoryRead</text>
+<rect x="240" y="79.5" width="0.0" height="28.0" rx="4" fill="#27ae60"/>
+<text x="248.0" y="98.5" class="value">0.049 us/op</text>
+<text x="228" y="145.5" text-anchor="end" class="label">diskDocOnlyRead</text>
+<rect x="240" y="126.5" width="84.5" height="28.0" rx="4" fill="#27ae60"/>
+<text x="332.5" y="145.5" class="value">226.9 us/op</text>
+<text x="228" y="192.5" text-anchor="end" class="label">diskRead</text>
+<rect x="240" y="173.5" width="627.2" height="28.0" rx="4" fill="#27ae60"/>
+<text x="875.2" y="192.5" class="value">1685 us/op</text>
+<text x="228" y="239.5" text-anchor="end" class="label">mmapDocOnlyRead</text>
+<rect x="240" y="220.5" width="79.0" height="28.0" rx="4" fill="#27ae60"/>
+<text x="327.0" y="239.5" class="value">212.2 us/op</text>
+<text x="228" y="286.5" text-anchor="end" class="label">mmapRead</text>
+<rect x="240" y="267.5" width="633.0" height="28.0" rx="4" fill="#27ae60"/>
+<text x="881.0" y="286.5" class="value">1701 us/op</text>
+<text x="575.0" y="350" text-anchor="middle" class="caption">us/op</text>
+</svg>

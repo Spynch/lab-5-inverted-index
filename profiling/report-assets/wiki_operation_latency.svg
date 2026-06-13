@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+
+<style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 20px; font-weight: 700; }
+    .axis { stroke: #293241; stroke-width: 1.2; }
+    .grid { stroke: #d7dee8; stroke-width: 1; }
+    .label { font-size: 12px; }
+    .value { font-size: 12px; font-weight: 600; }
+    .caption { font-size: 12px; fill: #536173; }
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="32" text-anchor="middle" class="title">Поиск по операциям на wiki-индексе</text>
+<line x1="240.0" y1="70" x2="240.0" y2="505" class="grid"/>
+<text x="240.0" y="527" text-anchor="middle" class="caption">0.000</text>
+<line x1="374.0" y1="70" x2="374.0" y2="505" class="grid"/>
+<text x="374.0" y="527" text-anchor="middle" class="caption">3.600</text>
+<line x1="508.0" y1="70" x2="508.0" y2="505" class="grid"/>
+<text x="508.0" y="527" text-anchor="middle" class="caption">7.200</text>
+<line x1="642.0" y1="70" x2="642.0" y2="505" class="grid"/>
+<text x="642.0" y="527" text-anchor="middle" class="caption">10.8</text>
+<line x1="776.0" y1="70" x2="776.0" y2="505" class="grid"/>
+<text x="776.0" y="527" text-anchor="middle" class="caption">14.4</text>
+<line x1="910.0" y1="70" x2="910.0" y2="505" class="grid"/>
+<text x="910.0" y="527" text-anchor="middle" class="caption">18.0</text>
+<line x1="240" y1="70" x2="240" y2="505" class="axis"/>
+<line x1="240" y1="505" x2="910" y2="505" class="axis"/>
+<text x="228" y="99.2" text-anchor="end" class="label">Term</text>
+<rect x="240" y="80.2" width="260.6" height="28.0" rx="4" fill="#eb5757"/>
+<text x="508.6" y="99.2" class="value">7.000 ms</text>
+<text x="228" y="147.5" text-anchor="end" class="label">And</text>
+<rect x="240" y="128.5" width="558.3" height="28.0" rx="4" fill="#eb5757"/>
+<text x="806.3" y="147.5" class="value">15.0 ms</text>
+<text x="228" y="195.9" text-anchor="end" class="label">Or</text>
+<rect x="240" y="176.8" width="409.4" height="28.0" rx="4" fill="#eb5757"/>
+<text x="657.4" y="195.9" class="value">11.0 ms</text>
+<text x="228" y="244.2" text-anchor="end" class="label">Not</text>
+<rect x="240" y="225.2" width="148.9" height="28.0" rx="4" fill="#eb5757"/>
+<text x="396.9" y="244.2" class="value">4.000 ms</text>
+<text x="228" y="292.5" text-anchor="end" class="label">Adj</text>
+<rect x="240" y="273.5" width="595.6" height="28.0" rx="4" fill="#eb5757"/>
+<text x="843.6" y="292.5" class="value">16.0 ms</text>
+<text x="228" y="340.9" text-anchor="end" class="label">Near</text>
+<rect x="240" y="321.8" width="483.9" height="28.0" rx="4" fill="#eb5757"/>
+<text x="731.9" y="340.9" class="value">13.0 ms</text>
+<text x="228" y="389.2" text-anchor="end" class="label">Complex_AndOr</text>
+<rect x="240" y="370.2" width="297.8" height="28.0" rx="4" fill="#eb5757"/>
+<text x="545.8" y="389.2" class="value">8.000 ms</text>
+<text x="228" y="437.5" text-anchor="end" class="label">Complex_AdjAnd</text>
+<rect x="240" y="418.5" width="446.7" height="28.0" rx="4" fill="#eb5757"/>
+<text x="694.7" y="437.5" class="value">12.0 ms</text>
+<text x="228" y="485.9" text-anchor="end" class="label">Complex_AndNot</text>
+<rect x="240" y="466.8" width="148.9" height="28.0" rx="4" fill="#eb5757"/>
+<text x="396.9" y="485.9" class="value">4.000 ms</text>
+<text x="575.0" y="550" text-anchor="middle" class="caption">ms</text>
+</svg>

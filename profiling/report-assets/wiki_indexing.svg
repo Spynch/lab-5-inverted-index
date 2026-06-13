@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360">
+
+<style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 20px; font-weight: 700; }
+    .axis { stroke: #293241; stroke-width: 1.2; }
+    .grid { stroke: #d7dee8; stroke-width: 1; }
+    .label { font-size: 12px; }
+    .value { font-size: 12px; font-weight: 600; }
+    .caption { font-size: 12px; fill: #536173; }
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="32" text-anchor="middle" class="title">Индексация Wikipedia</text>
+<line x1="260.0" y1="70" x2="260.0" y2="305" class="grid"/>
+<text x="260.0" y="327" text-anchor="middle" class="caption">0.000</text>
+<line x1="390.0" y1="70" x2="390.0" y2="305" class="grid"/>
+<text x="390.0" y="327" text-anchor="middle" class="caption">90.0</text>
+<line x1="520.0" y1="70" x2="520.0" y2="305" class="grid"/>
+<text x="520.0" y="327" text-anchor="middle" class="caption">180.0</text>
+<line x1="650.0" y1="70" x2="650.0" y2="305" class="grid"/>
+<text x="650.0" y="327" text-anchor="middle" class="caption">270.0</text>
+<line x1="780.0" y1="70" x2="780.0" y2="305" class="grid"/>
+<text x="780.0" y="327" text-anchor="middle" class="caption">360.0</text>
+<line x1="910.0" y1="70" x2="910.0" y2="305" class="grid"/>
+<text x="910.0" y="327" text-anchor="middle" class="caption">450.0</text>
+<line x1="260" y1="70" x2="260" y2="305" class="axis"/>
+<line x1="260" y1="305" x2="910" y2="305" class="axis"/>
+<text x="248" y="133.8" text-anchor="end" class="label">10 000 документов</text>
+<rect x="260" y="114.8" width="69.0" height="28.0" rx="4" fill="#9b51e0"/>
+<text x="337.0" y="133.8" class="value">47.8 s</text>
+<text x="248" y="251.3" text-anchor="end" class="label">100 000 документов (OOM)</text>
+<rect x="260" y="232.2" width="638.4" height="28.0" rx="4" fill="#9b51e0"/>
+<text x="906.4" y="251.3" class="value">442.0 s</text>
+<text x="585.0" y="350" text-anchor="middle" class="caption">s</text>
+</svg>

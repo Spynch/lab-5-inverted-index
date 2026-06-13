@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360" viewBox="0 0 980 360">
+
+<style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 20px; font-weight: 700; }
+    .axis { stroke: #293241; stroke-width: 1.2; }
+    .grid { stroke: #d7dee8; stroke-width: 1; }
+    .label { font-size: 12px; }
+    .value { font-size: 12px; font-weight: 600; }
+    .caption { font-size: 12px; fill: #536173; }
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="32" text-anchor="middle" class="title">AND: сравнение реализации</text>
+<line x1="240.0" y1="70" x2="240.0" y2="305" class="grid"/>
+<text x="240.0" y="327" text-anchor="middle" class="caption">0.000</text>
+<line x1="374.0" y1="70" x2="374.0" y2="305" class="grid"/>
+<text x="374.0" y="327" text-anchor="middle" class="caption">220.0</text>
+<line x1="508.0" y1="70" x2="508.0" y2="305" class="grid"/>
+<text x="508.0" y="327" text-anchor="middle" class="caption">440.0</text>
+<line x1="642.0" y1="70" x2="642.0" y2="305" class="grid"/>
+<text x="642.0" y="327" text-anchor="middle" class="caption">660.0</text>
+<line x1="776.0" y1="70" x2="776.0" y2="305" class="grid"/>
+<text x="776.0" y="327" text-anchor="middle" class="caption">880.0</text>
+<line x1="910.0" y1="70" x2="910.0" y2="305" class="grid"/>
+<text x="910.0" y="327" text-anchor="middle" class="caption">1100</text>
+<line x1="240" y1="70" x2="240" y2="305" class="axis"/>
+<line x1="240" y1="305" x2="910" y2="305" class="axis"/>
+<text x="228" y="133.8" text-anchor="end" class="label">andWithSkips</text>
+<rect x="240" y="114.8" width="608.0" height="28.0" rx="4" fill="#d1495b"/>
+<text x="856.0" y="133.8" class="value">998.3 us/op</text>
+<text x="228" y="251.3" text-anchor="end" class="label">andWithoutSkips</text>
+<rect x="240" y="232.2" width="392.9" height="28.0" rx="4" fill="#d1495b"/>
+<text x="640.9" y="251.3" class="value">645.1 us/op</text>
+<text x="575.0" y="350" text-anchor="middle" class="caption">us/op</text>
+</svg>

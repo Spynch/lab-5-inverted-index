@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" viewBox="0 0 980 440">
+
+<style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 20px; font-weight: 700; }
+    .axis { stroke: #293241; stroke-width: 1.2; }
+    .grid { stroke: #d7dee8; stroke-width: 1; }
+    .label { font-size: 12px; }
+    .value { font-size: 12px; font-weight: 600; }
+    .caption { font-size: 12px; fill: #536173; }
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="32" text-anchor="middle" class="title">Сравнение synthetic JMH и wiki-поиска</text>
+<line x1="260.0" y1="70" x2="260.0" y2="385" class="grid"/>
+<text x="260.0" y="407" text-anchor="middle" class="caption">0.000</text>
+<line x1="390.0" y1="70" x2="390.0" y2="385" class="grid"/>
+<text x="390.0" y="407" text-anchor="middle" class="caption">3.200</text>
+<line x1="520.0" y1="70" x2="520.0" y2="385" class="grid"/>
+<text x="520.0" y="407" text-anchor="middle" class="caption">6.400</text>
+<line x1="650.0" y1="70" x2="650.0" y2="385" class="grid"/>
+<text x="650.0" y="407" text-anchor="middle" class="caption">9.600</text>
+<line x1="780.0" y1="70" x2="780.0" y2="385" class="grid"/>
+<text x="780.0" y="407" text-anchor="middle" class="caption">12.8</text>
+<line x1="910.0" y1="70" x2="910.0" y2="385" class="grid"/>
+<text x="910.0" y="407" text-anchor="middle" class="caption">16.0</text>
+<line x1="260" y1="70" x2="260" y2="385" class="axis"/>
+<line x1="260" y1="385" x2="910" y2="385" class="axis"/>
+<text x="248" y="101.3" text-anchor="end" class="label">JMH inMemorySearch</text>
+<rect x="260" y="82.2" width="32.7" height="28.0" rx="4" fill="#56ccf2"/>
+<text x="300.7" y="101.3" class="value">0.805 ms</text>
+<text x="248" y="153.8" text-anchor="end" class="label">JMH diskSearch</text>
+<rect x="260" y="134.8" width="192.6" height="28.0" rx="4" fill="#56ccf2"/>
+<text x="460.6" y="153.8" class="value">4.740 ms</text>
+<text x="248" y="206.3" text-anchor="end" class="label">JMH mmapSearch</text>
+<rect x="260" y="187.2" width="179.1" height="28.0" rx="4" fill="#56ccf2"/>
+<text x="447.1" y="206.3" class="value">4.409 ms</text>
+<text x="248" y="258.8" text-anchor="end" class="label">Wiki And</text>
+<rect x="260" y="239.8" width="609.4" height="28.0" rx="4" fill="#56ccf2"/>
+<text x="877.4" y="258.8" class="value">15.0 ms</text>
+<text x="248" y="311.3" text-anchor="end" class="label">Wiki Near</text>
+<rect x="260" y="292.2" width="528.1" height="28.0" rx="4" fill="#56ccf2"/>
+<text x="796.1" y="311.3" class="value">13.0 ms</text>
+<text x="248" y="363.8" text-anchor="end" class="label">Wiki Complex_AndOr</text>
+<rect x="260" y="344.8" width="325.0" height="28.0" rx="4" fill="#56ccf2"/>
+<text x="593.0" y="363.8" class="value">8.000 ms</text>
+<text x="585.0" y="430" text-anchor="middle" class="caption">ms</text>
+</svg>

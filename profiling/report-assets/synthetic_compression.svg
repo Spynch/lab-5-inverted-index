@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" viewBox="0 0 980 440">
+
+<style>
+    text { font-family: Arial, sans-serif; fill: #172033; }
+    .title { font-size: 20px; font-weight: 700; }
+    .axis { stroke: #293241; stroke-width: 1.2; }
+    .grid { stroke: #d7dee8; stroke-width: 1; }
+    .label { font-size: 12px; }
+    .value { font-size: 12px; font-weight: 600; }
+    .caption { font-size: 12px; fill: #536173; }
+</style>
+
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="32" text-anchor="middle" class="title">Сжатие и декомпрессия posting lists</text>
+<line x1="105" y1="335.0" x2="925" y2="335.0" class="grid"/>
+<text x="93" y="339.0" text-anchor="end" class="caption">0.000</text>
+<line x1="105" y1="283.0" x2="925" y2="283.0" class="grid"/>
+<text x="93" y="287.0" text-anchor="end" class="caption">1600</text>
+<line x1="105" y1="231.0" x2="925" y2="231.0" class="grid"/>
+<text x="93" y="235.0" text-anchor="end" class="caption">3200</text>
+<line x1="105" y1="179.0" x2="925" y2="179.0" class="grid"/>
+<text x="93" y="183.0" text-anchor="end" class="caption">4800</text>
+<line x1="105" y1="127.0" x2="925" y2="127.0" class="grid"/>
+<text x="93" y="131.0" text-anchor="end" class="caption">6400</text>
+<line x1="105" y1="75.0" x2="925" y2="75.0" class="grid"/>
+<text x="93" y="79.0" text-anchor="end" class="caption">8000</text>
+<line x1="105" y1="75" x2="105" y2="335" class="axis"/>
+<line x1="105" y1="335" x2="925" y2="335" class="axis"/>
+<rect x="173.5" y="333.4" width="31.0" height="1.6" rx="3" fill="#2f80ed"/>
+<rect x="207.5" y="331.5" width="31.0" height="3.5" rx="3" fill="#f2994a"/>
+<text x="207.5" y="359" text-anchor="middle" class="label">none</text>
+<rect x="378.5" y="319.0" width="31.0" height="16.0" rx="3" fill="#2f80ed"/>
+<rect x="412.5" y="319.8" width="31.0" height="15.2" rx="3" fill="#f2994a"/>
+<text x="412.5" y="359" text-anchor="middle" class="label">varbyte</text>
+<rect x="583.5" y="326.4" width="31.0" height="8.6" rx="3" fill="#2f80ed"/>
+<rect x="617.5" y="327.5" width="31.0" height="7.5" rx="3" fill="#f2994a"/>
+<text x="617.5" y="359" text-anchor="middle" class="label">delta-varbyte</text>
+<rect x="788.5" y="138.2" width="31.0" height="196.8" rx="3" fill="#2f80ed"/>
+<rect x="822.5" y="88.1" width="31.0" height="246.9" rx="3" fill="#f2994a"/>
+<text x="822.5" y="359" text-anchor="middle" class="label">bitpacking</text>
+<rect x="105" y="395" width="16" height="16" fill="#2f80ed"/>
+<text x="129" y="408" class="label">compress</text>
+<rect x="285" y="395" width="16" height="16" fill="#f2994a"/>
+<text x="309" y="408" class="label">decompress</text>
+<text x="515.0" y="430" text-anchor="middle" class="caption">us/op</text>
+</svg>
