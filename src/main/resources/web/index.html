@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>Поиск по Wikipedia</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="page-shell">
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="На главную">
+            <span class="brand-mark">II</span>
+            <span>
+                <strong>Inverted Index</strong>
+                <small>поиск по Wikipedia</small>
+            </span>
+        </a>
+        <button class="help-button" id="helpButton" type="button">Синтаксис запроса</button>
+    </header>
+
+    <main>
+        <section class="search-hero" aria-labelledby="pageTitle">
+            <p class="eyebrow">Координатный обратный индекс</p>
+            <h1 id="pageTitle">Найдите страницы по словам и их положению</h1>
+            <p class="lead">Boolean-операторы, отрицание, точное соседство и поиск на расстоянии работают в одной строке.</p>
+
+            <form id="searchForm" class="search-form">
+                <label class="search-box">
+                    <span class="visually-hidden">Поисковый запрос</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/>
+                    </svg>
+                    <input id="queryInput" name="q" type="search" autocomplete="off"
+                           placeholder="(история AND россия) OR (москва NEAR/5 река)" required>
+                </label>
+                <button class="primary-button" id="searchButton" type="submit">Найти</button>
+            </form>
+
+            <div class="search-options">
+                <label class="switch">
+                    <input id="rankingInput" type="checkbox" checked>
+                    <span aria-hidden="true"></span>
+                    Сортировать по BM25
+                </label>
+                <div class="operator-list" aria-label="Операторы">
+                    <button type="button" data-token=" AND ">AND</button>
+                    <button type="button" data-token=" OR ">OR</button>
+                    <button type="button" data-token=" NOT ">NOT</button>
+                    <button type="button" data-token=" ADJ ">ADJ</button>
+                    <button type="button" data-token=" NEAR/5 ">NEAR/5</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section" aria-live="polite">
+            <div id="emptyState" class="empty-state">
+                <span class="empty-icon">⌕</span>
+                <h2>Введите запрос</h2>
+                <p>Например: <button class="example-query" type="button">история AND россия</button></p>
+            </div>
+
+            <div id="resultsView" hidden>
+                <div class="results-heading">
+                    <div>
+                        <p class="eyebrow">Результаты</p>
+                        <h2 id="resultSummary">Найдено страниц: 0</h2>
+                    </div>
+                    <p id="timingSummary" class="timing-summary"></p>
+                </div>
+                <div id="errorMessage" class="error-message" hidden></div>
+                <ol id="resultsList" class="results-list"></ol>
+                <div class="load-more-row">
+                    <button id="loadMoreButton" class="secondary-button" type="button" hidden>Показать ещё 10</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<dialog id="documentDialog" class="document-dialog">
+    <div class="dialog-header">
+        <div>
+            <p class="eyebrow">Исходный документ</p>
+            <h2 id="documentTitle">Загрузка...</h2>
+            <p id="documentMeta"></p>
+        </div>
+        <button id="closeDialogButton" class="icon-button" type="button" aria-label="Закрыть">×</button>
+    </div>
+    <div id="documentLoading" class="document-loading">Читаем страницу из XML dump...</div>
+    <article id="documentText" class="document-text" hidden></article>
+</dialog>
+
+<dialog id="helpDialog" class="help-dialog">
+    <div class="dialog-header">
+        <div>
+            <p class="eyebrow">Справка</p>
+            <h2>Синтаксис поисковой строки</h2>
+        </div>
+        <button id="closeHelpButton" class="icon-button" type="button" aria-label="Закрыть">×</button>
+    </div>
+    <div class="help-grid">
+        <div><code>A AND B</code><span>оба терма</span></div>
+        <div><code>A OR B</code><span>любой из термов</span></div>
+        <div><code>NOT A</code><span>исключить совпадения</span></div>
+        <div><code>A ADJ B</code><span>A непосредственно перед B</span></div>
+        <div><code>A EDGE B</code><span>синоним ADJ</span></div>
+        <div><code>A NEAR/5 B</code><span>расстояние не более 5 позиций</span></div>
+    </div>
+    <p class="help-note">Используйте круглые скобки для управления приоритетом операций.</p>
+</dialog>
+
+<template id="resultTemplate">
+    <li class="result-card">
+        <div class="result-rank"></div>
+        <div class="result-content">
+            <div class="result-topline">
+                <div>
+                    <p class="page-id"></p>
+                    <h3 class="result-title"></h3>
+                </div>
+                <span class="score-badge"></span>
+            </div>
+            <p class="snippet"></p>
+            <div class="term-details"></div>
+            <button class="open-document-button" type="button">Открыть документ</button>
+        </div>
+    </li>
+</template>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
